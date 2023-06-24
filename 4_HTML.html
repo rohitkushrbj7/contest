@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library System</title>
+  <style>
+    /* CSS styling for the page */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+      z-index: 100;
+    }
+    
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+    
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 50px;
+    }
+    
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    td table {
+      border: none;
+      width: 100%;
+    }
+    
+    td table tr td {
+      padding: 5px 0;
+    }
+    
+    td table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .registration-form {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+    }
+
+    .registration-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .registration-form input[type="text"],
+    .registration-form input[type="email"],
+    .registration-form input[type="password"],
+    .registration-form input[type="date"],
+    .registration-form input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    .registration-form input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      width: 100%;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    
+  </style>
+  <script>
+    // Smooth Scroll
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <!-- Book Table -->
+  <h2 id="books">Books</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>
+          <table>
+            <tr>
+                <td>Book Title 1</td>
+            </tr>
+            <tr>
+              <td>Publication Date: 2000</td>
+            </tr>
+            <tr>
+              <td>Page Count: 250</td>
+            </tr>
+            <tr>
+              <td>ISBN: 123-4567890123</td>
+            </tr>
+          </table>
+        </td>
+        <td>Author Name 1</td>
+        <td>Genre 1</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>
+          <table>
+            <tr>
+                <td>Book Title 2</td>
+            </tr>
+            <tr>
+              <td>Publication Date: 2005</td>
+            </tr>
+            <tr>
+                <td>Page Count: 300</td>
+            </tr>
+            <tr>
+              <td>ISBN: 123-4567890456</td>
+            </tr>
+          </table>
+        </td>
+        <td>Author Name 2</td>
+        <td>Genre 2</td>
+        <td>Not Available</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>
+          <table>
+            <tr>
+                <td>Book Title 3</td>
+            </tr>
+            <tr>
+              <td>Publication Date: 2010</td>
+            </tr>
+            <tr>
+                <td>Page Count: 350</td>
+            </tr>
+            <tr>
+              <td>ISBN: 123-4567890789</td>
+            </tr>
+          </table>
+        </td>
+        <td>Author Name 3</td>
+        <td>Genre 3</td>
+        <td>Available</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+    
+        
+<body>
+  <!-- Registration Form -->
+  <div class="registration-form">
+    <h2>Register</h2>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="dob">Date Of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+</body>
+</html>
